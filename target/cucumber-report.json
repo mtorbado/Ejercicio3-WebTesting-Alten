@@ -1,0 +1,1471 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 11,
+        "name": "POST pet with json body",
+        "description": "",
+        "id": "petstore;post-pet-with-json-body;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 742517000,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "I want to add a new pet",
+            "match": {
+              "location": "PetStoreStepDefinitions.iWantToAddANewPet()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5264500,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I do a \"POST\" operation",
+            "match": {
+              "arguments": [
+                {
+                  "val": "POST",
+                  "offset": 8
+                }
+              ],
+              "location": "PetStoreStepDefinitions.iDoAOperationToEndpoint(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1309000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the endpoint is \"/pet\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/pet",
+                  "offset": 17
+                }
+              ],
+              "location": "PetStoreStepDefinitions.theEndpointIs(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1547700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "with Content-Type value \"application/json\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "application/json",
+                  "offset": 25
+                }
+              ],
+              "location": "PetStoreStepDefinitions.withContentTypeValue(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5580400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "body \"validPet1.json\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "validPet1.json",
+                  "offset": 6
+                }
+              ],
+              "location": "PetStoreStepDefinitions.body(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3164404100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "The response code must be \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 27
+                }
+              ],
+              "location": "PetStoreStepDefinitions.theResponseCodeMustBe(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 12,
+        "name": "POST pet with json body",
+        "description": "",
+        "id": "petstore;post-pet-with-json-body;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 9824000,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "I want to add a new pet",
+            "match": {
+              "location": "PetStoreStepDefinitions.iWantToAddANewPet()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1951800,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I do a \"POST\" operation",
+            "match": {
+              "arguments": [
+                {
+                  "val": "POST",
+                  "offset": 8
+                }
+              ],
+              "location": "PetStoreStepDefinitions.iDoAOperationToEndpoint(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3253200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the endpoint is \"/pet\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/pet",
+                  "offset": 17
+                }
+              ],
+              "location": "PetStoreStepDefinitions.theEndpointIs(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 977700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "with Content-Type value \"application/json\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "application/json",
+                  "offset": 25
+                }
+              ],
+              "location": "PetStoreStepDefinitions.withContentTypeValue(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1595600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "body \"invalidPet.json\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "invalidPet.json",
+                  "offset": 6
+                }
+              ],
+              "location": "PetStoreStepDefinitions.body(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "net.serenitybdd.core.exceptions.SerenityManagedException: Not expected response code. Response was 200, expected 405\r\n\tat org.junit.Assert.fail(Assert.java:88)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat com.restAssuredSteps.PetStoreSteps.checkResponseCode(PetStoreSteps.java:124)\r\n\tat com.restAssuredSteps.PetStoreSteps$$EnhancerByCGLIB$$de4c0fda.CGLIB$checkResponseCode$5(\u003cgenerated\u003e)\r\n\tat com.restAssuredSteps.PetStoreSteps$$EnhancerByCGLIB$$de4c0fda$$FastClassByCGLIB$$c1806a47.invoke(\u003cgenerated\u003e)\r\n\tat net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)\r\n\tat net.thucydides.core.steps.BaseMethodRunner.invokeMethod(BaseMethodRunner.java:10)\r\n\tat net.thucydides.core.steps.NormalMethodRunner.invokeMethodAndNotifyFailures(NormalMethodRunner.java:20)\r\n\tat net.thucydides.core.steps.StepInterceptor.runNormalMethod(StepInterceptor.java:361)\r\n\tat net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:132)\r\n\tat net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:68)\r\n\tat com.restAssuredSteps.PetStoreSteps$$EnhancerByCGLIB$$de4c0fda.checkResponseCode(\u003cgenerated\u003e)\r\n\tat com.stepDefinitions.PetStoreStepDefinitions.theResponseCodeMustBe(PetStoreStepDefinitions.java:65)\r\n\tat ✽.The response code must be \"405\"(src/test/resources/features/pet.feature:8)\r\n",
+              "duration": 738314100,
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "The response code must be \"405\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "405",
+                  "offset": 27
+                }
+              ],
+              "location": "PetStoreStepDefinitions.theResponseCodeMustBe(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 23,
+        "name": "PUT pet with json body",
+        "description": "",
+        "id": "petstore;put-pet-with-json-body;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 11917800,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I want to actualize the information of a pet that is already on the system",
+            "match": {
+              "location": "PetStoreStepDefinitions.iWantToActualizeTheInformationOfAPetThatIsAlreadyOnTheSystem()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5123600,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I do a \"PUT\" operation",
+            "match": {
+              "arguments": [
+                {
+                  "val": "PUT",
+                  "offset": 8
+                }
+              ],
+              "location": "PetStoreStepDefinitions.iDoAOperationToEndpoint(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2484700,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "the endpoint is \"/pet\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/pet",
+                  "offset": 17
+                }
+              ],
+              "location": "PetStoreStepDefinitions.theEndpointIs(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 799200,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "with Content-Type value \"application/json\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "application/json",
+                  "offset": 25
+                }
+              ],
+              "location": "PetStoreStepDefinitions.withContentTypeValue(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1108700,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "body \"validPet2.json\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "validPet2.json",
+                  "offset": 6
+                }
+              ],
+              "location": "PetStoreStepDefinitions.body(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 699474700,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "The response code must be \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 27
+                }
+              ],
+              "location": "PetStoreStepDefinitions.theResponseCodeMustBe(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 24,
+        "name": "PUT pet with json body",
+        "description": "",
+        "id": "petstore;put-pet-with-json-body;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 6065000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I want to actualize the information of a pet that is already on the system",
+            "match": {
+              "location": "PetStoreStepDefinitions.iWantToActualizeTheInformationOfAPetThatIsAlreadyOnTheSystem()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 672700,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I do a \"PUT\" operation",
+            "match": {
+              "arguments": [
+                {
+                  "val": "PUT",
+                  "offset": 8
+                }
+              ],
+              "location": "PetStoreStepDefinitions.iDoAOperationToEndpoint(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1364900,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "the endpoint is \"/pet\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/pet",
+                  "offset": 17
+                }
+              ],
+              "location": "PetStoreStepDefinitions.theEndpointIs(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 994200,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "with Content-Type value \"application/json\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "application/json",
+                  "offset": 25
+                }
+              ],
+              "location": "PetStoreStepDefinitions.withContentTypeValue(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1361500,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "body \"invalidPet.json\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "invalidPet.json",
+                  "offset": 6
+                }
+              ],
+              "location": "PetStoreStepDefinitions.body(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "net.serenitybdd.core.exceptions.SerenityManagedException: Not expected response code. Response was 200, expected 405\r\n\tat org.junit.Assert.fail(Assert.java:88)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat com.restAssuredSteps.PetStoreSteps.checkResponseCode(PetStoreSteps.java:124)\r\n\tat com.restAssuredSteps.PetStoreSteps$$EnhancerByCGLIB$$de4c0fda.CGLIB$checkResponseCode$5(\u003cgenerated\u003e)\r\n\tat com.restAssuredSteps.PetStoreSteps$$EnhancerByCGLIB$$de4c0fda$$FastClassByCGLIB$$c1806a47.invoke(\u003cgenerated\u003e)\r\n\tat net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)\r\n\tat net.thucydides.core.steps.BaseMethodRunner.invokeMethod(BaseMethodRunner.java:10)\r\n\tat net.thucydides.core.steps.NormalMethodRunner.invokeMethodAndNotifyFailures(NormalMethodRunner.java:20)\r\n\tat net.thucydides.core.steps.StepInterceptor.runNormalMethod(StepInterceptor.java:361)\r\n\tat net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:132)\r\n\tat net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:68)\r\n\tat com.restAssuredSteps.PetStoreSteps$$EnhancerByCGLIB$$de4c0fda.checkResponseCode(\u003cgenerated\u003e)\r\n\tat com.stepDefinitions.PetStoreStepDefinitions.theResponseCodeMustBe(PetStoreStepDefinitions.java:65)\r\n\tat ✽.The response code must be \"405\"(src/test/resources/features/pet.feature:20)\r\n",
+              "duration": 638870500,
+              "status": "failed"
+            },
+            "line": 20,
+            "name": "The response code must be \"405\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "405",
+                  "offset": 27
+                }
+              ],
+              "location": "PetStoreStepDefinitions.theResponseCodeMustBe(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 35,
+        "name": "GET pet by status",
+        "description": "",
+        "id": "petstore;get-pet-by-status;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 7042800,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "I want to get a pet",
+            "match": {
+              "location": "PetStoreStepDefinitions.iWantToGetAPet()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2066600,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "I do a \"GET\" operation",
+            "match": {
+              "arguments": [
+                {
+                  "val": "GET",
+                  "offset": 8
+                }
+              ],
+              "location": "PetStoreStepDefinitions.iDoAOperationToEndpoint(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 929100,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "the endpoint is \"/pet\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/pet",
+                  "offset": 17
+                }
+              ],
+              "location": "PetStoreStepDefinitions.theEndpointIs(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 849100,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "with Content-Type value \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 25
+                }
+              ],
+              "location": "PetStoreStepDefinitions.withContentTypeValue(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 844600,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "status \"available\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "available",
+                  "offset": 8
+                }
+              ],
+              "location": "PetStoreStepDefinitions.status(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 726676000,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "The response code must be \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 27
+                }
+              ],
+              "location": "PetStoreStepDefinitions.theResponseCodeMustBe(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 36,
+        "name": "GET pet by status",
+        "description": "",
+        "id": "petstore;get-pet-by-status;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 7173500,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "I want to get a pet",
+            "match": {
+              "location": "PetStoreStepDefinitions.iWantToGetAPet()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1082200,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "I do a \"GET\" operation",
+            "match": {
+              "arguments": [
+                {
+                  "val": "GET",
+                  "offset": 8
+                }
+              ],
+              "location": "PetStoreStepDefinitions.iDoAOperationToEndpoint(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1211000,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "the endpoint is \"/pet\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/pet",
+                  "offset": 17
+                }
+              ],
+              "location": "PetStoreStepDefinitions.theEndpointIs(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 862400,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "with Content-Type value \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 25
+                }
+              ],
+              "location": "PetStoreStepDefinitions.withContentTypeValue(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 895100,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "status \"pending\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "pending",
+                  "offset": 8
+                }
+              ],
+              "location": "PetStoreStepDefinitions.status(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 638746100,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "The response code must be \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 27
+                }
+              ],
+              "location": "PetStoreStepDefinitions.theResponseCodeMustBe(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 37,
+        "name": "GET pet by status",
+        "description": "",
+        "id": "petstore;get-pet-by-status;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 5626300,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "I want to get a pet",
+            "match": {
+              "location": "PetStoreStepDefinitions.iWantToGetAPet()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 724100,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "I do a \"GET\" operation",
+            "match": {
+              "arguments": [
+                {
+                  "val": "GET",
+                  "offset": 8
+                }
+              ],
+              "location": "PetStoreStepDefinitions.iDoAOperationToEndpoint(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 747800,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "the endpoint is \"/pet\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/pet",
+                  "offset": 17
+                }
+              ],
+              "location": "PetStoreStepDefinitions.theEndpointIs(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 845800,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "with Content-Type value \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 25
+                }
+              ],
+              "location": "PetStoreStepDefinitions.withContentTypeValue(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 798800,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "status \"sold\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "sold",
+                  "offset": 8
+                }
+              ],
+              "location": "PetStoreStepDefinitions.status(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 675739900,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "The response code must be \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 27
+                }
+              ],
+              "location": "PetStoreStepDefinitions.theResponseCodeMustBe(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 48,
+        "name": "GET pet with petID",
+        "description": "",
+        "id": "petstore;get-pet-with-petid;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 7756300,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "I want to get a pet",
+            "match": {
+              "location": "PetStoreStepDefinitions.iWantToGetAPet()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 783000,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "I do a \"GET\" operation",
+            "match": {
+              "arguments": [
+                {
+                  "val": "GET",
+                  "offset": 8
+                }
+              ],
+              "location": "PetStoreStepDefinitions.iDoAOperationToEndpoint(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 801700,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "the endpoint is \"/pet\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/pet",
+                  "offset": 17
+                }
+              ],
+              "location": "PetStoreStepDefinitions.theEndpointIs(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 851300,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "with Content-Type value \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 25
+                }
+              ],
+              "location": "PetStoreStepDefinitions.withContentTypeValue(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 780800,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "pet ID \"1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 8
+                }
+              ],
+              "location": "PetStoreStepDefinitions.petID(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 626492400,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "The response code must be \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 27
+                }
+              ],
+              "location": "PetStoreStepDefinitions.theResponseCodeMustBe(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 49,
+        "name": "GET pet with petID",
+        "description": "",
+        "id": "petstore;get-pet-with-petid;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 11661700,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "I want to get a pet",
+            "match": {
+              "location": "PetStoreStepDefinitions.iWantToGetAPet()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1366200,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "I do a \"GET\" operation",
+            "match": {
+              "arguments": [
+                {
+                  "val": "GET",
+                  "offset": 8
+                }
+              ],
+              "location": "PetStoreStepDefinitions.iDoAOperationToEndpoint(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 842900,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "the endpoint is \"/pet\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/pet",
+                  "offset": 17
+                }
+              ],
+              "location": "PetStoreStepDefinitions.theEndpointIs(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 831100,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "with Content-Type value \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 25
+                }
+              ],
+              "location": "PetStoreStepDefinitions.withContentTypeValue(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 876600,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "pet ID \"2\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 8
+                }
+              ],
+              "location": "PetStoreStepDefinitions.petID(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 611645500,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "The response code must be \"404\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "404",
+                  "offset": 27
+                }
+              ],
+              "location": "PetStoreStepDefinitions.theResponseCodeMustBe(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 50,
+        "name": "GET pet with petID",
+        "description": "",
+        "id": "petstore;get-pet-with-petid;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 6227200,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "I want to get a pet",
+            "match": {
+              "location": "PetStoreStepDefinitions.iWantToGetAPet()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1075900,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "I do a \"GET\" operation",
+            "match": {
+              "arguments": [
+                {
+                  "val": "GET",
+                  "offset": 8
+                }
+              ],
+              "location": "PetStoreStepDefinitions.iDoAOperationToEndpoint(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 901400,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "the endpoint is \"/pet\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/pet",
+                  "offset": 17
+                }
+              ],
+              "location": "PetStoreStepDefinitions.theEndpointIs(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1030800,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "with Content-Type value \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 25
+                }
+              ],
+              "location": "PetStoreStepDefinitions.withContentTypeValue(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 746900,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "pet ID \"3\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 8
+                }
+              ],
+              "location": "PetStoreStepDefinitions.petID(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 660502400,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "The response code must be \"404\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "404",
+                  "offset": 27
+                }
+              ],
+              "location": "PetStoreStepDefinitions.theResponseCodeMustBe(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 61,
+        "name": "DELETE pet with petID",
+        "description": "",
+        "id": "petstore;delete-pet-with-petid;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 8225500,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "I want to delete a pet",
+            "match": {
+              "location": "PetStoreStepDefinitions.iWantToDeleteAPet()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 969200,
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "I do a \"DELETE\" operation",
+            "match": {
+              "arguments": [
+                {
+                  "val": "DELETE",
+                  "offset": 8
+                }
+              ],
+              "location": "PetStoreStepDefinitions.iDoAOperationToEndpoint(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 722100,
+              "status": "passed"
+            },
+            "line": 55,
+            "name": "the endpoint is \"/pet\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/pet",
+                  "offset": 17
+                }
+              ],
+              "location": "PetStoreStepDefinitions.theEndpointIs(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 635500,
+              "status": "passed"
+            },
+            "line": 56,
+            "name": "with Content-Type value \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 25
+                }
+              ],
+              "location": "PetStoreStepDefinitions.withContentTypeValue(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1090000,
+              "status": "passed"
+            },
+            "line": 57,
+            "name": "pet ID \"1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 8
+                }
+              ],
+              "location": "PetStoreStepDefinitions.petID(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 671144200,
+              "status": "passed"
+            },
+            "line": 58,
+            "name": "The response code must be \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 27
+                }
+              ],
+              "location": "PetStoreStepDefinitions.theResponseCodeMustBe(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 62,
+        "name": "DELETE pet with petID",
+        "description": "",
+        "id": "petstore;delete-pet-with-petid;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4540600,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "I want to delete a pet",
+            "match": {
+              "location": "PetStoreStepDefinitions.iWantToDeleteAPet()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 866200,
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "I do a \"DELETE\" operation",
+            "match": {
+              "arguments": [
+                {
+                  "val": "DELETE",
+                  "offset": 8
+                }
+              ],
+              "location": "PetStoreStepDefinitions.iDoAOperationToEndpoint(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 585400,
+              "status": "passed"
+            },
+            "line": 55,
+            "name": "the endpoint is \"/pet\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/pet",
+                  "offset": 17
+                }
+              ],
+              "location": "PetStoreStepDefinitions.theEndpointIs(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 509500,
+              "status": "passed"
+            },
+            "line": 56,
+            "name": "with Content-Type value \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 25
+                }
+              ],
+              "location": "PetStoreStepDefinitions.withContentTypeValue(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 645300,
+              "status": "passed"
+            },
+            "line": 57,
+            "name": "pet ID \"2\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 8
+                }
+              ],
+              "location": "PetStoreStepDefinitions.petID(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 625090300,
+              "status": "passed"
+            },
+            "line": 58,
+            "name": "The response code must be \"404\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "404",
+                  "offset": 27
+                }
+              ],
+              "location": "PetStoreStepDefinitions.theResponseCodeMustBe(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 63,
+        "name": "DELETE pet with petID",
+        "description": "",
+        "id": "petstore;delete-pet-with-petid;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 5745200,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "I want to delete a pet",
+            "match": {
+              "location": "PetStoreStepDefinitions.iWantToDeleteAPet()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 614400,
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "I do a \"DELETE\" operation",
+            "match": {
+              "arguments": [
+                {
+                  "val": "DELETE",
+                  "offset": 8
+                }
+              ],
+              "location": "PetStoreStepDefinitions.iDoAOperationToEndpoint(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2342900,
+              "status": "passed"
+            },
+            "line": 55,
+            "name": "the endpoint is \"/pet\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/pet",
+                  "offset": 17
+                }
+              ],
+              "location": "PetStoreStepDefinitions.theEndpointIs(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 742300,
+              "status": "passed"
+            },
+            "line": 56,
+            "name": "with Content-Type value \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 25
+                }
+              ],
+              "location": "PetStoreStepDefinitions.withContentTypeValue(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1323600,
+              "status": "passed"
+            },
+            "line": 57,
+            "name": "pet ID \"3\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 8
+                }
+              ],
+              "location": "PetStoreStepDefinitions.petID(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 623654300,
+              "status": "passed"
+            },
+            "line": 58,
+            "name": "The response code must be \"404\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "404",
+                  "offset": 27
+                }
+              ],
+              "location": "PetStoreStepDefinitions.theResponseCodeMustBe(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "petStore",
+    "description": "",
+    "id": "petstore",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/pet.feature",
+    "tags": []
+  }
+]

@@ -1,0 +1,6 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"petStore","POST pet with json body","FAILURE","2019-08-12T13:17:04.8589401+02:00[Europe/Paris]","0.0","5.34"
+"petStore","PUT pet with json body","FAILURE","2019-08-12T13:17:14.0602718+02:00[Europe/Paris]","0.0","1.42"
+"petStore","GET pet by status","SUCCESS","2019-08-12T13:17:15.6955708+02:00[Europe/Paris]","0.0","2.12"
+"petStore","GET pet with petID","SUCCESS","2019-08-12T13:17:18.0257216+02:00[Europe/Paris]","0.0","1.99"
+"petStore","DELETE pet with petID","SUCCESS","2019-08-12T13:17:20.2411921+02:00[Europe/Paris]","0.0","1.99"

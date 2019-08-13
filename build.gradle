@@ -1,0 +1,48 @@
+buildscript {
+    repositories {
+        mavenLocal()
+        jcenter()
+    }
+    dependencies {
+        classpath "net.serenity-bdd:serenity-gradle-plugin:1.9.45"
+    }
+}
+
+repositories {
+    mavenLocal()
+    jcenter()
+}
+
+apply plugin: 'java'
+apply plugin: 'net.serenity-bdd.aggregator'
+
+group = 'serenitybdd-seed'
+version = '2.0.1'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+dependencies {
+    compile 'net.serenity-bdd:serenity-rest-assured:1.9.45'
+    compile 'net.serenity-bdd:serenity-core:1.9.45'
+    compile 'net.serenity-bdd:serenity-cucumber:1.9.15'
+    compile 'org.json:json:20170516'
+
+    implementation "javax.xml.bind:jaxb-api:2.2.11"
+    implementation "com.sun.xml.bind:jaxb-core:2.2.11"
+    implementation "com.sun.xml.bind:jaxb-impl:2.2.11"
+    implementation "javax.activation:activation:1.1.1"
+}
+
+// Allow build to continue on test failure
+gradle.startParameter.continueOnFailure = true
+
+test {
+    systemProperties System.getProperties()
+    testLogging.showStandardStreams = true
+    // turn off html reports... windows can't handle certain cucumber test name characters.
+    test.reports.getHtml().enabled = false
+    test.reports.junitXml.enabled = false
+    include 'com/testRunner/TestRunner.class'
+}
+

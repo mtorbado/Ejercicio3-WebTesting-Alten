@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="2" name="petStore" skipped="0" tests="13" time="12.86" timestamp="2019-08-12 01:17:04"><testcase name="POST pet with json body"><failure message="Not expected response code. Response was 200, expected 405" type="java.lang.AssertionError">Not expected response code. Response was 200, expected 405</failure><system-err>Not expected response code. Response was 200, expected 405&#13;
+com.restAssuredSteps.PetStoreSteps.checkResponseCode(PetStoreSteps.java:124)&#13;
+com.stepDefinitions.PetStoreStepDefinitions.theResponseCodeMustBe(PetStoreStepDefinitions.java:65)&#13;
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+cucumber.runner.Runner.runPickle(Runner.java:80)&#13;
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+</system-err></testcase><testcase name="PUT pet with json body"><failure message="Not expected response code. Response was 200, expected 405" type="java.lang.AssertionError">Not expected response code. Response was 200, expected 405</failure><system-err>Not expected response code. Response was 200, expected 405&#13;
+com.restAssuredSteps.PetStoreSteps.checkResponseCode(PetStoreSteps.java:124)&#13;
+com.stepDefinitions.PetStoreStepDefinitions.theResponseCodeMustBe(PetStoreStepDefinitions.java:65)&#13;
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+cucumber.runner.Runner.runPickle(Runner.java:80)&#13;
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+</system-err></testcase><testcase name="GET pet by status"/><testcase name="GET pet with petID"/><testcase name="DELETE pet with petID"/></testsuite>
