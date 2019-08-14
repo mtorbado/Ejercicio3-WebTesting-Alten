@@ -1,3 +1,3 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"petStore","POST pet with json body","FAILURE","2019-08-12T13:17:04.8589401+02:00[Europe/Paris]","0.0","5.34"
-"petStore","PUT pet with json body","FAILURE","2019-08-12T13:17:14.0602718+02:00[Europe/Paris]","0.0","1.42"
+"petStore","POST pet with json body","FAILURE","2019-08-13T10:58:41.2648766+02:00[Europe/Paris]","0.0","6.9"
+"petStore","PUT pet with json body","FAILURE","2019-08-13T10:58:52.6614136+02:00[Europe/Paris]","0.0","1.46"

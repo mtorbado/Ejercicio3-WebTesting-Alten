@@ -1,4 +1,4 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"petStore","GET pet by status","SUCCESS","2019-08-12T13:17:15.6955708+02:00[Europe/Paris]","0.0","2.12"
-"petStore","GET pet with petID","SUCCESS","2019-08-12T13:17:18.0257216+02:00[Europe/Paris]","0.0","1.99"
-"petStore","DELETE pet with petID","SUCCESS","2019-08-12T13:17:20.2411921+02:00[Europe/Paris]","0.0","1.99"
+"petStore","GET pet by status","SUCCESS","2019-08-13T10:58:54.760272+02:00[Europe/Paris]","0.0","2.33"
+"petStore","GET pet with petID","SUCCESS","2019-08-13T10:58:57.2695877+02:00[Europe/Paris]","0.0","2.01"
+"petStore","DELETE pet with petID","SUCCESS","2019-08-13T10:58:59.5470526+02:00[Europe/Paris]","0.0","2.11"

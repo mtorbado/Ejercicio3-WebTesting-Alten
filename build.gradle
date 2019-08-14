@@ -27,6 +27,7 @@ dependencies {
     compile 'net.serenity-bdd:serenity-core:1.9.45'
     compile 'net.serenity-bdd:serenity-cucumber:1.9.15'
     compile 'org.json:json:20170516'
+    compile group: 'org.jenkins-ci.plugins', name: 'serenity', version: '1.0'
 
     implementation "javax.xml.bind:jaxb-api:2.2.11"
     implementation "com.sun.xml.bind:jaxb-core:2.2.11"
